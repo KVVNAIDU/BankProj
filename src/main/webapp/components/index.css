@@ -1,8 +1,46 @@
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+img{
+	    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto
+	
+}
 body{
 	margin:0;
-	background-color: lightskyblue;
+	background-image: url('https://img.freepik.com/free-photo/close-up-water-droplets-black_23-2147828354.jpg');
+background-repeat: no-repeat;
+	background-size: cover;
 }
 .footer{
 	display: flex;
 	justify-content: space-evenly;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 100px;
+	
+	
+}
+form{
+	padding: 50px;
+	background-color: white;
+	line-height: 1.7;
+}
+
+.footer a{
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background-color: blue;
 }
