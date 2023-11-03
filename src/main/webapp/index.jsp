@@ -8,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="form">
-		<div >
-			<form action="/CustLogin" class="form-items">
+	<div class="outline" >
+	
+		<div class="form"  >
+			<form action="CustLogin" class="form-items" method="post">
 				<img alt="" src="https://image.shutterstock.com/image-photo/image-260nw-2328270345.jpg">
 				<br/><label for="name">Name</label><br/>
 				<input name="name" type="text" /><br/>
@@ -21,11 +22,13 @@
 				<a href="./changePin" >Forgot password</a><br/>
 				</div>
 			</form>
+
 		</div>
-	</div>
-	<div class="footer">
+		<div class="footer">
 		<a href="./empLogin">Employee login</a>
 		<a href="./register">Don't have account</a>
 	</div>
+	</div>
+	
 </body>
 </html>

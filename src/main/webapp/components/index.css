@@ -34,8 +34,13 @@ background-repeat: no-repeat;
 }
 form{
 	padding: 50px;
-	background-color: white;
+	background-color: transparent;
 	line-height: 1.7;
+	color: white;
+    border: 1.2px wheat solid;
+
+
+
 }
 
 .footer a{
