@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,6 +26,7 @@ public class CustLog extends HttpServlet{
 		Connection con=null;
 		PreparedStatement ps=null;
 		ResultSet rs = null;
+		resp.setContentType("text/html");
 		PrintWriter pw = resp.getWriter();
 		try {
 			 con=Connector.connect();
@@ -34,11 +36,13 @@ public class CustLog extends HttpServlet{
 			
 			rs=ps.executeQuery();
 			if(rs.next()) {
-				pw.print("<h1>successful Login</h1>");
-				pw.print("userName: "+rs.getString(2));
-				
+				pw.print("welcome");
+				RequestDispatcher rd = req.getRequestDispatcher("/welcome.jsp");
+				rd.forward(req, resp);
 			}else {
-				pw.print("<h2>error occured</h2>");
+				pw.print("error in name or password");
+				RequestDispatcher rd = req.getRequestDispatcher("/index.jsp");
+				rd.include(req, resp);
 			}
 			
 		} catch (SQLException | ClassNotFoundException e) {

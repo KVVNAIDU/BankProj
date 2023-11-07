@@ -18,6 +18,8 @@ body{
 	background-image: url('https://img.freepik.com/free-photo/close-up-water-droplets-black_23-2147828354.jpg');
 background-repeat: no-repeat;
 	background-size: cover;
+	color: wheat;
+	text-align: center;
 }
 .footer{
 	display: flex;
